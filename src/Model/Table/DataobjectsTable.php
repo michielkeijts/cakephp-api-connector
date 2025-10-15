@@ -32,7 +32,7 @@ class DataobjectsTable extends Table
 {
     public function getSchema(): TableSchemaInterface
     {
-        return parent::getSchema()->setColumnType('data', 'serialized');
+        return parent::getSchema()->setColumnType('data', 'json');
     }
 
     /**
